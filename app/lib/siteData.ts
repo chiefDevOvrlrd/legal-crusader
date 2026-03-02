@@ -6,13 +6,14 @@ export const SITE_META = {
   tagline: "Trusted. Strategic. Results-Driven.",
   lawyer: {
     fullName: "Ogban Chima-Oduko",
-    title: "Barrister & Solicitor",
+    title: "Principal Partner",
     credentials: "Called to the Bar in Canada",
     focus: "Immigration & Refugee Law",
     bio: "I provide clear guidance, strong representation, and strategic solutions tailored to your case. You don't have to navigate immigration alone.",
     website: "www.tiktok.com/@legalcrusaders",
     email: "ogbanchimaoduko@gmail.com",
     phone: "647-875-5763",
+    location: "Plot 387, Idris Ibrahim Crescent, Jabi, Abuja"
   },
   tagWords: ["Trusted.", "Strategic.", "Results-Driven."],
 };

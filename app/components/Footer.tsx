@@ -3,7 +3,7 @@
 
 import { SITE_META, SERVICES } from "@/app/lib/siteData";
 import Flag from 'react-world-flags';
-import {Mail, Phone} from 'lucide-react';
+import {Mail, Phone, Locate} from 'lucide-react';
 import { PiTiktokLogo } from "react-icons/pi";
 
 const FOOTER_NAV = [
@@ -27,7 +27,7 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-4">
               <Flag code="CA" className="w-6 h-6" />
               <span className="font-display text-2xl font-semibold text-white">
-                Legal<em className="text-crimson not-italic p-2">Crusader</em>
+                Legal<em className="text-crimson not-italic p-2">Crusaders</em>
               </span>
             </div>
             <p className="font-body text-white/50 text-sm leading-relaxed mb-6 max-w-sm">
@@ -59,6 +59,15 @@ export default function Footer() {
               >
                 <PiTiktokLogo className="text-crimson w-4 h-4"/>
                 {SITE_META.lawyer.website}
+              </a>
+              <a
+                href={`https://share.google/5bbWYI1usGkPSscTj`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 font-body text-white/50 hover:text-gold text-sm transition-colors duration-200"
+              >
+                <Locate className="text-crimson w-4 h-4"/>
+                {SITE_META.lawyer.location}
               </a>
             </div>
           </div>
@@ -107,7 +116,7 @@ export default function Footer() {
       <div className="border-t border-white/8">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="font-body text-white/30 text-xs">
-            © {year} Legal Crusader — {SITE_META.lawyer.fullName}, {SITE_META.lawyer.title}. All rights reserved.
+            © {year} Legal Crusaders — {SITE_META.lawyer.fullName}, {SITE_META.lawyer.title}. All rights reserved.
           </p>
           <p className="font-body text-white/25 text-xs">
             Based in Canada · Serving Clients Across Canada & Internationally

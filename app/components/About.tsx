@@ -46,7 +46,7 @@ export default function About() {
                 {/* Large initials as avatar fallback */}
                 <div>
                   <Image
-                    src="/ogb.png"
+                    src="/ogb.jpeg"
                     alt="Ogban Chima Oduko"
                     fill
                     className="object-cover absolute w-1 h-1 hover:scale-110 transition-transform duration-300"

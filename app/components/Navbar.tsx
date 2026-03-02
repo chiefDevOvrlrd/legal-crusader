@@ -8,7 +8,6 @@ import { SITE_META } from "@/app/lib/siteData";
 const NAV_LINKS = [
   { label: "About", href: "#about" },
   { label: "Services", href: "#services" },
-  { label: "Process", href: "#process" },
   { label: "Why Us", href: "#why-us" },
   { label: "Contact", href: "#contact" },
 ];
@@ -67,7 +66,7 @@ export default function Navbar() {
             </span>
             <div className="flex flex-col leading-tight">
               <span className="font-display font-semibold text-xl text-white tracking-wide">
-                Legal<span className="text-crimson italic p-1">Crusader</span>
+                Legal<span className="text-crimson italic p-1">Crusaders</span>
               </span>
               <span className="text-gold/70 text-[10px] font-body tracking-[0.2em] uppercase">
                 Immigration Counsel
