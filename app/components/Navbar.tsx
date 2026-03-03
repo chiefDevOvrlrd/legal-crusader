@@ -2,8 +2,7 @@
 // components/Navbar.tsx
 
 import { useState, useEffect } from "react";
-import Flag from 'react-world-flags'
-import { SITE_META } from "@/app/lib/siteData";
+import Image from "next/image"
 
 const NAV_LINKS = [
   { label: "About", href: "#about" },
@@ -61,9 +60,14 @@ export default function Navbar() {
             }}
             className="flex items-center gap-3 group"
           >
-            <span className="text-2xl transition-transform duration-300 group-hover:scale-110">
-              <Flag code="CA" className="w-8 h-8" />
-            </span>
+            <div className="relative w-16 h-16">
+              <Image
+                src="/logo.png"
+                alt="legal crusaders logo"
+                fill
+                className="absolute"
+              />
+            </div>
             <div className="flex flex-col leading-tight">
               <span className="font-display font-semibold text-xl text-white tracking-wide">
                 Legal<span className="text-crimson italic p-1">Crusaders</span>

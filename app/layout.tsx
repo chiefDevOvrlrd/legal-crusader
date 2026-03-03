@@ -19,7 +19,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Ogban Law | Canadian Immigration Lawyer",
+  title: "Legal Crusaders | LAW OFFICE LP",
   description:
     "Ogban Chima-Oduko — Barrister & Solicitor. Expert Canadian immigration law services: permanent residence, refugee claims, Federal Court challenges, work permits, and more. Trusted. Strategic. Results-Driven.",
   keywords:

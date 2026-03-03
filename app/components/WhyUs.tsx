@@ -3,6 +3,7 @@
 
 import { useEffect, useRef } from "react";
 import { WHY_CHOOSE_US } from "@/app/lib/siteData";
+import Image from "next/image"
 
 export default function WhyUs() {
   const gridRef = useRef<HTMLDivElement>(null);
@@ -111,8 +112,15 @@ export default function WhyUs() {
             </p>
 
             <div className="flex items-center justify-center gap-4">
-              <div className="w-10 h-10 rounded-full bg-crimson/20 border border-crimson/40 flex items-center justify-center">
-                <span className="font-display font-bold text-crimson text-sm">OC</span>
+              <div className="w-10 h-10 rounded-full bg-crimson/20 border border-crimson/40 flex items-center justify-center overflow-hidden">
+                <span className="font-display font-bold text-crimson text-sm relative flex items-center justify-center w-full h-full ">
+                  <Image
+                    src='/ogb.jpeg'
+                    alt='ogban chima-oduko'
+                    fill
+                    className="object-cover absolute"
+                  />
+                </span>
               </div>
               <div className="text-left">
                 <p className="font-body text-white font-medium text-sm">

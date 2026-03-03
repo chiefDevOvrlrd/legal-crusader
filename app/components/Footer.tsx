@@ -2,8 +2,8 @@
 // Server component — no "use client" needed
 
 import { SITE_META, SERVICES } from "@/app/lib/siteData";
-import Flag from 'react-world-flags';
-import {Mail, Phone, Locate} from 'lucide-react';
+import {Mail, Phone, MapPin} from 'lucide-react';
+import Image from "next/image"
 import { PiTiktokLogo } from "react-icons/pi";
 
 const FOOTER_NAV = [
@@ -25,7 +25,14 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-3 mb-4">
-              <Flag code="CA" className="w-6 h-6" />
+              <div className="relative w-16 h-16">
+                <Image
+                  src="/logo.png"
+                  alt="legal crusaders logo"
+                  fill
+                  className="absolute"
+                />
+              </div>
               <span className="font-display text-2xl font-semibold text-white">
                 Legal<em className="text-crimson not-italic p-2">Crusaders</em>
               </span>
@@ -66,7 +73,7 @@ export default function Footer() {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-body text-white/50 hover:text-gold text-sm transition-colors duration-200"
               >
-                <Locate className="text-crimson w-4 h-4"/>
+                <MapPin className="text-crimson w-4 h-4"/>
                 {SITE_META.lawyer.location}
               </a>
             </div>

@@ -53,7 +53,7 @@ export default function About() {
                   />
                 </div>
 
-                {/* <div className="text-center">
+                <div className="text-center">
                   <div className="w-32 h-32 rounded-full bg-gradient-to-br from-crimson to-crimson-dark flex items-center justify-center mx-auto mb-4 shadow-2xl">
                     <span className="font-display text-5xl font-bold text-white">
                       OC
@@ -62,7 +62,7 @@ export default function About() {
                   <p className="font-body text-white/40 text-sm">
                     Replace with professional headshot
                   </p>
-                </div> */}
+                </div>
 
                 {/* Bottom name plate */}
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-navy-950 via-navy-950/90 to-transparent p-6">
