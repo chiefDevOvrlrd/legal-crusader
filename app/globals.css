@@ -248,6 +248,11 @@ body {
   transform: translateY(-2px);
 }
 
+.btn-crimson:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
 /* ─── Checklist Item Animation ───────────────────────── */
 .checklist-item {
   opacity: 0;

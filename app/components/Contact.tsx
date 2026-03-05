@@ -26,6 +26,8 @@ export default function Contact() {
     message: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleChange = (
     e: React.ChangeEvent<
@@ -35,11 +37,28 @@ export default function Contact() {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, connect to your backend/email service
-    console.log("Form submitted:", formData);
-    setSubmitted(true);
+    setLoading(true);
+    setError(null);
+    try{
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        const errorData = await response.json(); // Assuming your API sends JSON error messages
+        throw new Error(errorData.message || 'Failed to submit form');
+      }
+
+      setSubmitted(true);
+    }catch(error){
+      setError(error instanceof Error ? error.message : 'Unexpected error. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -213,14 +232,33 @@ export default function Contact() {
                     className="w-full bg-navy-950/60 border border-white/10 rounded-lg px-4 py-3 font-body text-white text-sm placeholder-white/25 focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/20 transition-colors resize-none"
                   />
                 </div>
+                  {error && (
+                    <div className="flex items-start gap-3 bg-crimson/10 border border-crimson/30 rounded-lg px-4 py-3">
+                      <svg className="w-4 h-4 text-crimson mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                      </svg>
+                      <p className="font-body text-sm text-crimson/90">{error}</p>
+                    </div>
+                  )}
 
-                <button
-                  type="submit"
-                  className="btn-crimson w-full bg-crimson text-white font-body font-semibold py-4 rounded-lg text-sm tracking-wide"
-                >
-                  Submit Consultation Request →
-                </button>
-
+                  {/* 4. Replace the submit button */}
+                  <button
+                    type="submit"
+                    disabled={loading}
+                    className="btn-crimson w-full bg-crimson text-white font-body font-semibold py-4 rounded-lg text-sm tracking-wide disabled:opacity-60 disabled:cursor-not-allowed disabled:translate-y-0 disabled:shadow-none flex items-center justify-center gap-2"
+                  >
+                    {loading ? (
+                      <>
+                        <svg className="w-4 h-4 animate-spin" fill="none" viewBox="0 0 24 24">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"/>
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v8H4z"/>
+                        </svg>
+                        Sending...
+                      </>
+                    ) : (
+                      'Submit Consultation Request →'
+                    )}
+                  </button>
                 <p className="font-body text-white/35 text-xs text-center">
                   All consultations are confidential. We serve clients across Canada and internationally.
                 </p>
