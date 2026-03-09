@@ -5,10 +5,6 @@ sgMail.setApiKey(process.env.SENDGRID_API_KEY!);
 export async function POST(req: Request) {
     try {
         const body = await req.json();
-            console.log('✅ Body received:', body);
-    console.log('✅ API Key exists:', !!process.env.SENDGRID_API_KEY);
-    console.log('✅ Client Template ID:', process.env.SENDGRID_CLIENT_TEMPLATE_ID);
-    console.log('✅ Firm Template ID:', process.env.SENDGRID_FIRM_TEMPLATE_ID);
         const { name, email, phone, inquiryType, message } = body;
 
         if (!name || !email || !inquiryType || !message) {
@@ -39,7 +35,7 @@ export async function POST(req: Request) {
         await sgMail.send({
         to: 'ogbanchimaoduko@gmail.com',
         from: {
-            email:'ogbanchimaoduko@gmail.com',
+            email:'info@legalcrusaderslaw.com',
             name: 'Legal Crusaders',
         },   
         replyTo: email,
