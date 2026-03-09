@@ -105,7 +105,7 @@ export default function WhyUs() {
 
           <div className="relative z-10 text-center max-w-3xl mx-auto">
             <p className="font-display text-2xl lg:text-3xl text-white/85 italic font-light leading-relaxed mb-8">
-              I provide clear guidance, strong representation, and strategic
+              We provide clear guidance, strong representation, and strategic
               solutions tailored to your case. Federal Court challenges are
               complex and time-sensitive — proper legal guidance maximizes your
               chance of success.

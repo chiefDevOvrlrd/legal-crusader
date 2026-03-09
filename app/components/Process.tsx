@@ -1,12 +1,37 @@
 "use client";
 // components/Process.tsx
 
+import { useEffect, useRef } from "react";
 import { useScrollReveal } from "@/app/hooks/useScrollReveal";
 import { PROCESS_STEPS } from "@/app/lib/siteData";
 
 export default function Process() {
   const titleRef = useScrollReveal<HTMLDivElement>();
-  const stepsRef = useScrollReveal<HTMLDivElement>({ threshold: 0.1 });
+  const stepsRef = useRef<HTMLDivElement>(null);
+
+
+  useEffect(() => {
+    const steps = stepsRef.current?.querySelectorAll<HTMLElement>(".step-item");
+    if (!steps) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const el = entry.target as HTMLElement;
+            const idx = parseInt(el.dataset.index || "0");
+            setTimeout(() => el.classList.add("is-visible"), idx * 150);
+            observer.unobserve(el);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    steps.forEach((step) => observer.observe(step));
+    return () => observer.disconnect();
+  }, []);
+
 
   return (
     <section id="process" className="bg-navy-950 py-28 relative overflow-hidden">
@@ -40,7 +65,8 @@ export default function Process() {
           {PROCESS_STEPS.map((step, index) => (
             <div
               key={step.number}
-              className={`reveal-up delay-${index + 1} relative flex flex-col items-center text-center group`}
+              data-index={index}
+              className={"step-item reveal-up relative flex flex-col items-center text-center group"}
             >
               {/* Number circle */}
               <div className="relative mb-6 z-10">

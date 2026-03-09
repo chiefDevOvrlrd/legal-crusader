@@ -85,7 +85,7 @@ export default function Hero() {
             <p className="hero-animate anim-3 font-body text-white/60 text-lg leading-relaxed mb-8 max-w-lg">
               {SITE_META.tagline} Expert legal guidance from a{" "}
               <span className="text-white font-medium">
-                Called-to-the-Bar Canadian lawyer
+                licensed Canadian lawyer
               </span>{" "}
               focused exclusively on Immigration &amp; Refugee Law.
             </p>

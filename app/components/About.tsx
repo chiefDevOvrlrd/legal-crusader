@@ -59,9 +59,6 @@ export default function About() {
                       OC
                     </span>
                   </div>
-                  <p className="font-body text-white/40 text-sm">
-                    Replace with professional headshot
-                  </p>
                 </div>
 
                 {/* Bottom name plate */}
@@ -73,11 +70,6 @@ export default function About() {
                     {SITE_META.lawyer.title}
                   </p>
                 </div>
-              </div>
-
-              {/* Floating badge */}
-              <div className="absolute -right-4 top-12 bg-crimson text-white font-body text-xs font-medium px-3 py-2 rounded shadow-lg shadow-crimson/30">
-                🍁 Called to the Bar
               </div>
             </div>
           </div>
@@ -101,7 +93,7 @@ export default function About() {
 
             <p className="font-body text-white/65 text-base leading-relaxed mb-8">
               With a deep commitment to justice and a thorough understanding of
-              Canadian immigration law, I bring precision and dedication to
+              Canadian immigration law, We bring precision and dedication to
               every case — whether you&apos;re pursuing permanent residency,
               defending against a removal order, or challenging a refusal at
               the Federal Court level.

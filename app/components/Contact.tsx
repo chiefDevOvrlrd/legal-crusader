@@ -147,7 +147,7 @@ export default function Contact() {
                 className="bg-navy-900/60 border border-white/8 rounded-2xl p-8 space-y-5"
               >
                 <h3 className="font-display text-2xl text-white font-semibold mb-6">
-                  Book a Free Consultation
+                  Schedule a Consultation
                 </h3>
 
                 <div className="grid sm:grid-cols-2 gap-5">

@@ -12,8 +12,10 @@ export const SITE_META = {
     bio: "I provide clear guidance, strong representation, and strategic solutions tailored to your case. You don't have to navigate immigration alone.",
     website: "www.tiktok.com/@legalcrusaders",
     email: "ogbanchimaoduko@gmail.com",
-    phone: "647-875-5763",
-    location: "Plot 387, Idris Ibrahim Crescent, Jabi, Abuja"
+    phone: "204-691-9961",
+    fax: "204-219-4350",
+    location: "104 - 1200 Pembina Hwy Winnipeg MB R3T 2A7",
+    locationUrl: "https://maps.app.goo.gl/HC5WPXhrcPXbtGYL9"
   },
   tagWords: ["Trusted.", "Strategic.", "Results-Driven."],
 };

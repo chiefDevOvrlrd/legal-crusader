@@ -3,7 +3,7 @@
 
 import { SITE_META, SERVICES } from "@/app/lib/siteData";
 import {Mail, Phone, MapPin} from 'lucide-react';
-import Image from "next/image"
+import Image from "next/image";
 import { PiTiktokLogo } from "react-icons/pi";
 
 const FOOTER_NAV = [
@@ -68,7 +68,7 @@ export default function Footer() {
                 {SITE_META.lawyer.website}
               </a>
               <a
-                href={`https://share.google/5bbWYI1usGkPSscTj`}
+                href={`${SITE_META.lawyer.locationUrl}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 font-body text-white/50 hover:text-gold text-sm transition-colors duration-200"
