@@ -11,7 +11,7 @@ export const SITE_META = {
     focus: "Immigration & Refugee Law",
     bio: "I provide clear guidance, strong representation, and strategic solutions tailored to your case. You don't have to navigate immigration alone.",
     website: "www.tiktok.com/@legalcrusaders",
-    email: "ogbanchimaoduko@gmail.com",
+    email: "info@legalcrusaderslaw.com",
     phone: "204-691-9961",
     fax: "204-219-4350",
     location: "104 - 1200 Pembina Hwy Winnipeg MB R3T 2A7",
