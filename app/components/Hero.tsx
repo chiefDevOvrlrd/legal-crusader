@@ -96,7 +96,7 @@ export default function Hero() {
                 href="#contact"
                 className="btn-crimson inline-flex items-center justify-center gap-2 bg-crimson text-white font-body font-medium px-8 py-4 rounded text-sm tracking-wide"
               >
-                Book a Free Consultation
+                Schedule a Consultation
                 <svg
                   className="w-4 h-4"
                   fill="none"
