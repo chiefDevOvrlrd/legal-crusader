@@ -12,10 +12,10 @@ export const SITE_META = {
     bio: "I provide clear guidance, strong representation, and strategic solutions tailored to your case. You don't have to navigate immigration alone.",
     website: "www.tiktok.com/@legalcrusaders",
     email: "info@legalcrusaderslaw.com",
-    phone: "647-875-5763",
+    phone: "(431) 546-1220",
     fax: "204-219-4350",
-    location: "104 - 1200 Pembina Hwy Winnipeg MB R3T 2A7",
-    locationUrl: "https://maps.app.goo.gl/HC5WPXhrcPXbtGYL9"
+    location: "700 Dovercourt Dr Unit 31 #682 Winnipeg, MB R3Y 1X5 Canada",
+    locationUrl: "https://maps.app.goo.gl/6RXsTisBbnpRBpoW8"
   },
   tagWords: ["Trusted.", "Strategic.", "Results-Driven."],
 };
