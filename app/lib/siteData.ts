@@ -3,7 +3,7 @@
 
 export const SITE_META = {
   name: "Ogban Law",
-  tagline: "Trusted. Strategic. Results-Driven.",
+  tagline: "Immigration Law. Civil Litigation. Results-Driven.",
   lawyer: {
     fullName: "Ogban Chima-Oduko",
     title: "Principal Partner",
@@ -27,9 +27,12 @@ export const HERO_CHECKLIST = [
   "Sponsor your spouse or parents?",
   "Apply for a Work or Study Permit?",
   "Challenge a refusal in Federal Court?",
+  "Resolve a contract dispute?",
+  "Defend or commence a civil lawsuit?",
 ];
 
 export const SERVICES = [
+  //Immigration
   {
     id: "permanent-residence",
     icon: "🍁",
@@ -92,16 +95,56 @@ export const SERVICES = [
       "Dependent Children",
     ],
   },
+  //civil litigation
   {
-    id: "federal-court",
-    icon: "🏛️",
-    title: "Federal Court Representation",
+    id: "contract-law",
+    icon: "📝",
+    title: "Contract Law",
     description:
-      "Proven track record challenging refusals and advocating for your rights at the highest level.",
+      "From drafting watertight agreements to enforcing them in court — protecting your interests at every stage of a contract's life.",
     items: [
-      "Judicial Review Applications",
-      "Leave Applications",
-      "Certiorari & Mandamus",
+      "Contract Drafting & Review",
+      "Breach of Contract Claims",
+      "Settlement & Negotiation",
+      "NDAs, Employment & Business Agreements",
+    ],
+  },
+  {
+    id: "civil-litigation",
+    icon: "🏛️",
+    title: "Civil Litigation",
+    description:
+      "Strategic representation in non-criminal disputes — from the first demand letter to final judgment and enforcement.",
+    items: [
+      "Statement of Claim & Defence",
+      "Examinations for Discovery",
+      "Mediation & Arbitration",
+      "Trial Representation",
+    ],
+  },
+  {
+    id: "commercial-disputes",
+    icon: "💼",
+    title: "Commercial & Business Disputes",
+    description:
+      "Protecting businesses and individuals in complex commercial conflicts with clear strategy and decisive action.",
+    items: [
+      "Business & Partnership Disputes",
+      "Debt Recovery",
+      "Employment Disputes",
+      "Insurance Claims",
+    ],
+  },
+  {
+    id: "post-judgment",
+    icon: "🔨",
+    title: "Post-Judgment Enforcement",
+    description:
+      "Winning is only the first step. We pursue full enforcement of judgments to ensure you actually collect.",
+    items: [
+      "Garnishment Orders",
+      "Seizure of Assets",
+      "Filing & Defending Appeals",
     ],
   },
 ];

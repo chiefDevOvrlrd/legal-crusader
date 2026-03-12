@@ -56,11 +56,18 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div
-          ref={gridRef}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-6"
-        >
-          {SERVICES.map((service, index) => (
+<div ref={gridRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+  {/* Immigration heading */}
+  <div className="md:col-span-2 lg:col-span-3 mt-2 mb-2">
+    <div className="flex items-center gap-4">
+      <span className="font-body text-gold/60 text-xs tracking-[0.25em] uppercase">Immigration Law</span>
+      <div className="flex-1 h-px bg-gradient-to-r from-gold/20 to-transparent" />
+    </div>
+  </div>
+
+  {SERVICES.slice(0, 5).map((service, index) => (
+    // ... your existing card JSX, just change SERVICES.map to SERVICES.slice(0,5).map
             <div
               key={service.id}
               data-index={index}
@@ -99,8 +106,60 @@ export default function Services() {
                 <div className="mt-6 h-px bg-gradient-to-r from-crimson/0 via-crimson/0 to-crimson/0 group-hover:from-crimson/0 group-hover:via-crimson group-hover:to-crimson/0 transition-all duration-500" />
               </div>
             </div>
-          ))}
-        </div>
+  ))}
+
+  {/* Civil Litigation heading */}
+  <div className="md:col-span-2 lg:col-span-3 mt-8 mb-2">
+    <div className="flex items-center gap-4">
+      <span className="font-body text-gold/60 text-xs tracking-[0.25em] uppercase">Civil Litigation & Contract Law</span>
+      <div className="flex-1 h-px bg-gradient-to-r from-gold/20 to-transparent" />
+    </div>
+  </div>
+
+  {SERVICES.slice(5).map((service, index) => (
+            <div
+              key={service.id}
+              data-index={index}
+              className="service-card-wrapper reveal-up"
+            >
+              <div className="service-card h-full bg-navy-950/60 border border-white/8 rounded-xl p-7 hover:border-gold/25 transition-all duration-400 group">
+                {/* Icon */}
+                <div className="w-12 h-12 rounded-lg bg-crimson/15 border border-crimson/25 flex items-center justify-center text-2xl mb-5 group-hover:bg-crimson/25 transition-colors duration-300">
+                  {service.icon}
+                </div>
+
+                {/* Title */}
+                <h3 className="font-display text-xl text-white font-semibold mb-2 group-hover:text-gold transition-colors duration-300">
+                  {service.title}
+                </h3>
+
+                {/* Description */}
+                <p className="font-body text-white/55 text-sm leading-relaxed mb-5">
+                  {service.description}
+                </p>
+
+                {/* Items list */}
+                <ul className="space-y-1.5">
+                  {service.items.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-center gap-2 font-body text-white/65 text-sm"
+                    >
+                      <span className="w-1 h-1 rounded-full bg-gold/60 flex-shrink-0" />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+
+                {/* Bottom accent line — animates on hover */}
+                <div className="mt-6 h-px bg-gradient-to-r from-crimson/0 via-crimson/0 to-crimson/0 group-hover:from-crimson/0 group-hover:via-crimson group-hover:to-crimson/0 transition-all duration-500" />
+              </div>
+            </div>
+  ))}
+
+</div>
+        {/* Services Grid */}
+
 
         {/* Federal Court CTA Banner */}
         <div className="mt-16 relative overflow-hidden rounded-2xl">
