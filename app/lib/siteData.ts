@@ -9,7 +9,7 @@ export const SITE_META = {
     title: "Principal Partner",
     credentials: "Called to the Bar in Canada",
     focus: "Immigration & Refugee Law",
-    bio: "I provide clear guidance, strong representation, and strategic solutions tailored to your case. You don't have to navigate immigration alone.",
+    bio: "We provide clear guidance, strong representation, and strategic solutions tailored to your case. You don't have to navigate immigration alone.",
     website: "www.tiktok.com/@legalcrusaders",
     email: "info@legalcrusaderslaw.com",
     phone: "(431) 546-1220",

@@ -94,7 +94,7 @@ export default function About() {
             <p className="font-body text-white/65 text-base leading-relaxed mb-8">
               With a deep commitment to justice and a thorough understanding of
               Canadian immigration law, We bring precision and dedication to
-              every case — whether you&apos;re pursuing permanent residency,
+              every case; whether you are pursuing permanent residency,
               defending against a removal order, or challenging a refusal at
               the Federal Court level.
             </p>
