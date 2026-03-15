@@ -20,9 +20,9 @@ export async function POST(req: Request) {
         await sgMail.send({
         to: email,
         from: 'info@legalcrusaderslaw.com',   
+        subject: 'Confirmation of Your Inquiry With Legal Crusaders',
         templateId: process.env.SENDGRID_CLIENT_TEMPLATE_ID!,
         dynamicTemplateData: {
-            subject: 'Confirmation of Your Inquiry With Legal Crusaders',
             name,
             email,
             phone: phone || 'Not provided',
@@ -38,10 +38,10 @@ export async function POST(req: Request) {
             email:'info@legalcrusaderslaw.com',
             name: 'Legal Crusaders',
         },   
+        subject: `New Inquiry from ${name} (${inquiryType})`,
         replyTo: email,
         templateId: process.env.SENDGRID_FIRM_TEMPLATE_ID!,
             dynamicTemplateData: {
-                subject: `New Inquiry from ${name} (${inquiryType})`,
                 name,
                 email,
                 phone: phone || 'Not provided',
