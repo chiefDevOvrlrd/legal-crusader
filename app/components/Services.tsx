@@ -51,7 +51,7 @@ export default function Services() {
           <div className="w-16 h-0.5 bg-crimson mx-auto mb-6" />
           <p className="font-body text-white/55 max-w-2xl mx-auto text-base leading-relaxed">
             From first application to Federal Court — we handle every stage of
-            your immigration journey with expertise and precision.
+            your immigration journey with Experiencedise and precision.
           </p>
         </div>
 
@@ -181,7 +181,7 @@ export default function Services() {
               </h3>
               <p className="font-body text-white/75 text-sm mt-2">
                 Federal Court deadlines are strict. Take action before they
-                pass — your case deserves expert guidance.
+                pass — your case deserves Experienced guidance.
               </p>
             </div>
             <a

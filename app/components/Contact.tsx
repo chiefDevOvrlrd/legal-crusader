@@ -73,7 +73,7 @@ export default function Contact() {
             Get in Touch
           </span>
           <h2 className="font-display text-4xl lg:text-5xl text-white font-semibold mt-3 mb-4">
-            Your Case Deserves Expert Guidance
+            Your Case Deserves Experienced Guidance
           </h2>
           <div className="w-16 h-0.5 bg-crimson mx-auto mb-6" />
           <p className="font-body text-white/55 max-w-xl mx-auto text-base">

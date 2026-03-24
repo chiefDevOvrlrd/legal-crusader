@@ -2,7 +2,7 @@
 // All site content in one place — swap copy here without touching components
 
 export const SITE_META = {
-  name: "Ogban Law",
+  name: "Legal Crusaders",
   tagline: "Immigration Law. Civil Litigation. Results-Driven.",
   lawyer: {
     fullName: "Ogban Chima-Oduko",
@@ -38,7 +38,7 @@ export const SERVICES = [
     icon: "🍁",
     title: "Permanent Residence Programs",
     description:
-      "Navigate the most competitive pathways to permanent residency with expert legal strategy and preparation.",
+      "Navigate the most competitive pathways to permanent residency with Experienced legal strategy and preparation.",
     items: [
       "Express Entry",
       "Provincial Nominee Programs (PNP)",
@@ -182,7 +182,7 @@ export const WHY_CHOOSE_US = [
   },
   {
     icon: "⏱️",
-    title: "Time-Sensitive Expertise",
+    title: "Time-Sensitive Experiencedise",
     description:
       "Immigration deadlines are critical. We act swiftly to protect your interests and meet every deadline.",
   },

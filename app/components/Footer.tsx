@@ -38,7 +38,7 @@ export default function Footer() {
               </span>
             </div>
             <p className="font-body text-white/50 text-sm leading-relaxed mb-6 max-w-sm">
-              {SITE_META.lawyer.fullName} — {SITE_META.lawyer.title}. Expert Canadian
+              {SITE_META.lawyer.fullName} — {SITE_META.lawyer.title}. Experienced Canadian
               immigration counsel. {SITE_META.tagline}
             </p>
 

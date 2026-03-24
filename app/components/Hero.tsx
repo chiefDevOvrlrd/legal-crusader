@@ -83,7 +83,7 @@ export default function Hero() {
 
             {/* Tagline */}
             <p className="hero-animate anim-3 font-body text-white/60 text-lg leading-relaxed mb-8 max-w-lg">
-              {SITE_META.tagline} Expert legal guidance from a{" "}
+              {SITE_META.tagline} Experienced legal guidance from a{" "}
               <span className="text-white font-medium">
                 licensed Canadian lawyer
               </span>{" "}

@@ -21,12 +21,12 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Legal Crusaders | Law Office LP",
   description:
-    "Ogban Chima-Oduko — Barrister & Solicitor. Expert Canadian immigration law services: permanent residence, refugee claims, Federal Court challenges, work permits, and more. Trusted. Strategic. Results-Driven.",
+    "Ogban Chima-Oduko — Barrister & Solicitor. Experienced Canadian immigration law services: permanent residence, refugee claims, Federal Court challenges, work permits, and more. Trusted. Strategic. Results-Driven.",
   keywords:
     "Canadian immigration lawyer, Federal Court, refugee claims, express entry, permanent residence, work permit, PRRA, Ogban Chima-Oduko",
   openGraph: {
     title: "Legal Crusaders | Law Office LP",
-    description: "Trusted. Strategic. Results-Driven. Expert Canadian immigration legal guidance.",
+    description: "Trusted. Strategic. Results-Driven. Experienced Canadian immigration legal guidance.",
     type: "website",
     url: "https://www.legalcrusaderslaw.com",
   },
