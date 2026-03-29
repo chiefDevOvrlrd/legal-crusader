@@ -5,6 +5,8 @@ import { SITE_META, SERVICES } from "@/app/lib/siteData";
 import {Mail, Phone, MapPin} from 'lucide-react';
 import Image from "next/image";
 import { PiTiktokLogo } from "react-icons/pi";
+import { FaFax } from "react-icons/fa";
+
 
 const FOOTER_NAV = [
   { label: "About", href: "#about" },
@@ -76,11 +78,16 @@ export default function Footer() {
                 <MapPin className="text-crimson w-4 h-4"/>
                 {SITE_META.lawyer.location}
               </a>
+              <a
+                href={`:${SITE_META.lawyer.fax}`}
+                className="flex items-center gap-2 font-body text-white/50 hover:text-gold text-sm transition-colors duration-200"
+              >
+                <FaFax className="text-crimson w-4 h-4"/>
+                {SITE_META.lawyer.fax}
+              </a>
             </div>
-          </div>
 
-          {/* Navigation */}
-          <div>
+            {/* Navigation */}
             <h4 className="font-body text-white/80 text-xs tracking-[0.2em] uppercase mb-5 font-semibold">
               Navigation
             </h4>
