@@ -88,7 +88,7 @@ export default function Footer() {
             </div>
 
             {/* Navigation */}
-            <h4 className="font-body text-white/80 text-xs tracking-[0.2em] uppercase mb-5 font-semibold">
+            <h4 className="font-body pt-4 text-white/80 text-xs tracking-[0.2em] uppercase mb-5 font-semibold">
               Navigation
             </h4>
             <ul className="space-y-2.5">
