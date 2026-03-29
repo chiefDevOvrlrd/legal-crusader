@@ -16,6 +16,15 @@ const FOOTER_NAV = [
   { label: "Contact", href: "#contact" },
 ];
 
+export const ThinFax = () => (
+  <span className="relative inline-block w-4 h-4">
+    {/* background (the outline) */}
+    <FaFax className="absolute inset-0 text-crimson" />
+    {/* foreground (the mask) */}
+    <FaFax className="absolute inset-0 text-navy-950 scale-[0.75]" />
+  </span>
+);
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -82,7 +91,7 @@ export default function Footer() {
                 href={`:${SITE_META.lawyer.fax}`}
                 className="flex items-center gap-2 font-body text-white/50 hover:text-gold text-sm transition-colors duration-200"
               >
-                <FaFax className="text-crimson w-4 h-4"/>
+                <ThinFax />
                 {SITE_META.lawyer.fax}
               </a>
             </div>
