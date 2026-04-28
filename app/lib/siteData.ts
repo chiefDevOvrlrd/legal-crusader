@@ -14,8 +14,8 @@ export const SITE_META = {
     email: "info@legalcrusaderslaw.com",
     phone: "(431) 546-1220",
     fax: "204-219-4350",
-    location: "700 Dovercourt Dr Unit 31 #682 Winnipeg, MB R3Y 1X5 Canada",
-    locationUrl: "https://maps.app.goo.gl/6RXsTisBbnpRBpoW8"
+    location: "79 Bayly street west, Unit 15 #741 Ajax Ontario, L1X 7K7",
+    locationUrl: "https://share.google/X0aZI7qgPVZPZwVkF"
   },
   tagWords: ["Trusted.", "Strategic.", "Results-Driven."],
 };
