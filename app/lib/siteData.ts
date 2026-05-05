@@ -12,7 +12,7 @@ export const SITE_META = {
     bio: "We provide clear guidance, strong representation, and strategic solutions tailored to your case. You don't have to navigate immigration alone.",
     website: "www.tiktok.com/@legalcrusaders",
     email: "info@legalcrusaderslaw.com",
-    phone: "(431) 546-1220",
+    phone: "647 875 5763",
     fax: "204-219-4350",
     location: "79 Bayly street west, Unit 15 #741 Ajax Ontario, L1X 7K7",
     locationUrl: "https://share.google/X0aZI7qgPVZPZwVkF"
