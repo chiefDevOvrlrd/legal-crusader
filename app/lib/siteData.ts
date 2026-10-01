@@ -147,6 +147,19 @@ export const SERVICES = [
       "Filing & Defending Appeals",
     ],
   },
+  {
+    id: "labor and employment law",
+    icon: "👔",
+    title: "Labor & Employment Law",
+    description:
+      "Protecting the rights of employees and employers alike with clear guidance and strong representation.",
+    items: [
+      "Employment Contracts & Agreements",
+      "Class Action Lawsuit",
+      "Workplace Discrimination & Harassment",
+      "Shareholder & Partnership Disputes",
+    ],
+  }
 ];
 
 export const WHY_CHOOSE_US = [
