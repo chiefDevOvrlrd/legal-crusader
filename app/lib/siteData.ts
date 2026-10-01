@@ -155,9 +155,9 @@ export const SERVICES = [
       "Protecting the rights of employees and employers alike with clear guidance and strong representation.",
     items: [
       "Employment Contracts & Agreements",
-      "Class Action Lawsuit",
+      "Termination dispute, severance pay, layoff etc.",
       "Workplace Discrimination & Harassment",
-      "Shareholder & Partnership Disputes",
+      "Human rights & discrimination",
     ],
   }
 ];
